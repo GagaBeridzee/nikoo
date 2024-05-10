@@ -1,0 +1,45 @@
+{
+    "name": "Niko",
+    "short_name": "Niko",
+    "description": "ქართული ჩათბოტი, რომელიც პირდაპირ კავშირშია ქართულ ვიკიპედიასთან.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#060606",
+    "theme_color": "#060606",
+    "icons": [
+        {
+            "src": "assets/image/icons/niko-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "assets/image/icons/niko-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "orientation": "any",
+    "prefer_related_applications": false,
+    "related_applications": [],
+    "scope": "/",
+    "lang": "ka",
+    "dir": "ltr",
+    "serviceworker": {
+        "src": "/service-worker.js",
+        "scope": "/"
+    },
+    "shortcuts": [
+        {
+            "name": "Niko",
+            "description": "ქართული ვიკი ჩათბოტი.",
+            "url": "/",
+            "icons": [
+                {
+                    "src": "assets/image/icons/niko-72.png",
+                    "type": "image/png",
+                    "sizes": "72x72"
+                }
+            ]
+        }
+    ]
+}
