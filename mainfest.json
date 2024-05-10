@@ -40,6 +40,42 @@
                     "sizes": "72x72"
                 }
             ]
+        },
+        {
+            "name": "Niko",
+            "description": "ქართული ვიკი ჩათბოტი.",
+            "url": "/",
+            "icons": [
+                {
+                    "src": "assets/image/icons/niko-72.png",
+                    "type": "image/png",
+                    "sizes": "72x72"
+                }
+            ]
+        },
+        {
+            "name": "Niko",
+            "description": "ქართული ვიკი ჩათბოტი.",
+            "url": "/",
+            "icons": [
+                {
+                    "src": "assets/image/icons/niko-72.png",
+                    "type": "image/png",
+                    "sizes": "72x72"
+                }
+            ]
+        },
+        {
+            "name": "Niko",
+            "description": "ქართული ვიკი ჩათბოტი.",
+            "url": "/",
+            "icons": [
+                {
+                    "src": "assets/image/icons/niko-72.png",
+                    "type": "image/png",
+                    "sizes": "72x72"
+                }
+            ]
         }
     ]
 }
