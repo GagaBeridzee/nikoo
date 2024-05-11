@@ -15,3 +15,25 @@
     align-items: center;
     justify-content: start;
 }
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin shadow{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.padding-content{
+    padding: 1rem;
+}
+
+.h-full{
+    height: calc(100vh - 6rem);
+}
+
+.border-heavy{
+    border-radius: $br-x-heavy;
+}

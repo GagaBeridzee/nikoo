@@ -1,0 +1,35 @@
+.dropdown {
+    .dropdown-menu {
+        border: 1px solid $summary-secondary-light;
+        @include shadow;
+        border-radius: $br-heavy;
+        padding: 5px;
+
+        .dropdown-item {
+            border-radius: $br-medium;
+            padding: 8px 25px;
+        }
+    }
+
+    .dropdown-toggle {
+
+        &:hover i {
+            transform: translate(180deg);
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}
+
+// navbar dropdown center fix
+.navbar {
+    .dropdown-centered {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-top: 1rem;
+        font-size: 14px;
+    }
+}

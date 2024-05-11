@@ -6,18 +6,20 @@
 @import './abstracts/mixins';
 @import './abstracts/placeholders';
 
+/* Components */
+@import './components/dropdown';
+@import './components/modal';
+@import './components/header';
+@import './components/buttons';
+@import './components/aside';
+@import './components/message';
+@import './components/chat-form';
+
 /* Base Styles */
 @import './base/reset';
 @import './base/typography';
 @import './base/forms';
 @import './base/responsive';
-
-/* Components */
-@import './components/modal';
-@import './components/header';
-@import './components/buttons';
-@import './components/message';
-@import './components/chat-form';
 
 /* Page or Layout Styles */
 @import './page/about';

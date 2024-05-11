@@ -1,15 +1,26 @@
 /* colors */
-$primary-color: linear-gradient(45deg, rgba(212,16,66,1) 0%, rgba(253,53,94,1) 100%);
-$p-color: rgba(212,16,66,1);
+$primary-color-gradient: linear-gradient(45deg, rgba(212,16,66,1) 0%, rgba(253,53,94,1) 100%);
+$primary-color: #fa2a5e;
+$primary-color-hover: #C10F3C;
+$primary-color-active: #AF0E37;
+$primary-color-disabled: #EA88A1;
 
 /* colors Light-mode */
 
 /* colors Dark-mode */
-$body-primary: #0f0f10;
-$body-secondary: #242424;
+$summary-primary-dark: #0f0f10;
+$summary-secondary-dark: #242424;
 
-$text-primary: #ffffff;
-$text-secondary: #898989;
+$text-primary-dark: #ffffff;
+$text-secondary-dark: #898989;
+
+/* color Light-mode */
+$summary-primary-light: #ffffff;
+$summary-secondary-light: #f2f2f2;
+$summary-third-light: #f0faf9;
+
+$text-primary-light: #141414;
+$text-secondary-light: #b1b1b1;
 
 /* Fonts */
 $base-font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -23,8 +34,8 @@ $large-spacing-unit: 2rem;
 /* Border */
 $br-lite: 5px;
 $br-medium: 10px;
-$br-heavy: 15px;
-$br-x-heavy: 20px;
+$br-heavy: 20px;
+$br-x-heavy: 35px;
 $br-infinity: 999px;
 
 /* Breakpoints */

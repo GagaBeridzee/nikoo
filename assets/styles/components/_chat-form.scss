@@ -1,100 +1,48 @@
-.chat-form{
-    position: absolute;
-    bottom: 1%;
-    left: 50%;
-    transform: translate(-50%, 0);
+.chat-form {
+    position: sticky;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    @include flex-center;
-    flex-direction: column;
+    background-color: $summary-primary-light;
+    z-index: 1000;
+    border-radius: 0 0 $br-x-heavy $br-x-heavy;
 
-    .container{
-        @include flex-center;
-        gap: 10px;
-
-        .chat-querysend{
-            @include flex-center;
-            width: 100%;
-            border-radius: $br-infinity;
-            background-color: $body-primary;
-            padding: 0 .60rem;
-            border: 1px solid $body-secondary;
-            transition: all .3s ease;
-
-            .chat-input{
-                width: 100%;
-                padding: 1rem;
-                outline: none;
-                font-size: 15px;
-                color: $text-primary;
-    
-                &::placeholder{
-                    color: $text-secondary;
-                }
-            }
-    
-            .chat-submit{
-                @include flex-center;
-                background-color: $text-primary;
-                width: 35px;
-                height: 35px;
-                border: none;
-                border-radius: $br-infinity;
-                color: $body-primary;
-                transition: all .3s ease;
-    
-                &:disabled{
-                    opacity: .1;
-                }
-            }
-        }
-
-        .chat-category-btn{
-            width: 40px;
-            height: 40px;
-            background: $primary-color;
-            border-radius: $br-infinity;
-            color: $text-primary;
-        }
-    }
-
-    h6{
-        font-size: 11px;
-        color: $text-secondary;
-        padding-top: 10px;
-        
-        a{
-            text-decoration: underline;
-        }
-    }
-
-    .promt-container{
-        border: 1px solid $body-secondary;
-        margin-bottom: 1.5rem;
-        border-radius: $br-x-heavy;
-        background-color: $body-primary;
-        padding: 1rem;
-        width: 100%;
+    .content {
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        row-gap: 25px;
-        
-        h6{
-            text-align: start;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-            color: $text-primary;
+        gap: 10px;
+        padding: 1rem;
+        padding-top: 0;
+        overflow: hidden;
+
+        input[type="text"] {
+            flex: 1;
+            border-radius: $br-infinity;
+            padding: calc(.5rem + 3px) 1rem;
+            border: 1px solid $summary-secondary-light;
+            outline: none;
+            font-size: 14px;
         }
 
-        .pre-promts{
-            @include flex-start;
-            flex-wrap: wrap;
-            width: 100%;
-            gap: 12px;
+        button {
+            width: 45px;
+            height: 45px;
+            @include flex-center;
+            border-radius: $br-infinity;
+            background-color: $text-primary-light;
+            color: $summary-primary-light;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: $primary-color;
+                color: $summary-primary-light;
+            }
+
+            i {
+                font-size: 1rem;
+            }
         }
     }
 }

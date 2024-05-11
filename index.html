@@ -2,158 +2,380 @@
 <html lang="ka-GE">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Description of your website" />
-    <meta name="keywords" content="Keywords, related to your website" />
-    <meta name="author" content="Gaga Beridze" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description of your website">
+    <meta name="keywords" content="Keywords, related to your website">
+    <meta name="author" content="Gaga Beridze">
 
     <!-- Title -->
     <title>Niko</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/image/icons/niko-32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="assets/image/icons/niko-16.png" sizes="16x16" />
-    <link rel="apple-touch-icon" href="assets/image/icons/apple-touch-icon.png" sizes="180x180" />
-    <link rel="manifest" href="mainfest.json" />
+    <link rel="icon" type="image/png" href="assets/image/icons/niko-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/image/icons/niko-16.png" sizes="16x16">
+    <link rel="apple-touch-icon" href="assets/image/icons/apple-touch-icon.png" sizes="180x180">
+    <link rel="manifest" href="mainfest.json">
 
     <!-- Open Graph meta tags -->
-    <meta property="og:title" content="Your Website Title" />
-    <meta property="og:description" content="Description of your website for social media" />
-    <meta property="og:image" content="https://example.com/images/og-image.jpg" />
-    <meta property="og:url" content="https://example.com" />
-    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Your Website Title">
+    <meta property="og:description" content="Description of your website for social media">
+    <meta property="og:image" content="https://example.com/images/og-image.jpg">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
 
     <!-- Twitter Card meta tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Your Website Title" />
-    <meta name="twitter:description" content="Description of your website for Twitter" />
-    <meta name="twitter:image" content="https://example.com/images/twitter-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Website Title">
+    <meta name="twitter:description" content="Description of your website for Twitter">
+    <meta name="twitter:image" content="https://example.com/images/twitter-image.jpg">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://example.com" />
+    <link rel="canonical" href="https://example.com">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 
 <body>
-    <header class="container-fluid header">
-    </header>
-
-    <main class="container">
-        <section class="container" id="niko-header">
-            <div class="row">
-                <div class="chat-header col-12 mb-5">
-                    <div>
-                        <img src="assets/image/icons/logo.svg" alt="">
-                        <h1>
-                            ნიკო
-                        </h1>
+    <header>
+        <!-- navigation bar start -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/image/icons/logo.svg" height="45" alt=""> ნიკო
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">ნიკო</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">სანიშნე</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">სწავლა</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center flex-row gap-3">
+                    <div class="navbar-nav">
+                        <div class="button-list">
+                            <div class="dropdown-center dropdown">
+                                <button class="btn" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fi fi-rr-drafting-compass"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-centered">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
-                    <p>
-                        ნიკო - ქართული ჩათბოტი, რომელიც პირდაპირ კავშირშია ვიკიპედიასთან. ნიკოს დახმარებით თქვენ
-                        შეგიძლიათ
-                        100 სტატიის ერთდროულად მოძიება და ინფორმაციის მიღება შესაძლებელია როგორც გაფილტრული, ასევე სრული
-                        სახით.
-                    </p>
-                </div>
-
-                <div class="col-12 container text-center">
-                    <div class="row d-flex justify-content-center align-items-center mt-5">
-                        <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-                        <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-
-                        <!-- Force next columns to break to new line -->
-                        <div class="w-100"></div>
-
-                        <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-                        <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                    <div class="navbar-nav">
+                        <div class="button-list">
+                            <button type="button" class="btn">
+                                <i class="fi fi-rr-bell"></i>
+                            </button>
+                            <button type="button" class="btn">
+                                <i class="ti ti-settings-2"></i>
+                            </button>
+                            <button type="button" class="btn">
+                                <img src="assets/image/profile/tato.jpg" alt="Tato">
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-<!-- 
-        <section id="information-container">
-           
-        </section> -->
+        </nav>
+        <!--- navigation bar end --->
+    </header>
 
-        <section>
-            <form action="" method="get" class="chat-form">
+    <div class="container-fluid r">
+        <div class="row">
+            <div class="col-auto padding-content h-full">
+                <aside class="d-flex flex-column">
+                    <div class="content">
+                        <div class="sidebar-header">
+                            <h5>
+                                ჩატის ისტორია
+                            </h5>
+                            <button class="btn toggle-btn">
+                                <i class="fi fi-rr-sidebar-flip"></i>
+                            </button>
+                        </div>
 
-                <div class="promt-container container">
-                    <h6>პოპულალური ბრძანებები</h6>
-
-                    <div class="pre-promts">
-                        <button class="btn promt-btn" type="button">
-                            <i class="fi fi-sr-select"></i> რაფლ ნორმან შელდი
-                        </button>
-                        <button class="btn promt-btn" type="button">
-                            <i class="fi fi-sr-react"></i> კეროლ შელბი
-                        </button>
-                        <button class="btn promt-btn" type="button">
-                            <i class="fi fi-sr-select"></i> ეუკარიოტები
-                        </button>
-                        <button class="btn promt-btn" type="button">
-                            <i class="fi fi-sr-flask"></i> მაგნიუმი
-                        </button>
-                        <button class="btn promt-btn" type="button">
-                            <i class="fi fi-sr-square-root"></i> სინუსი და კოსინუსი
-                        </button>
-                        <button class="btn promt-btn" type="button">
-                            <i class="fi fi-sr-book-alt"></i> ნიკოლოზ ბარათაშვილი
-                        </button>
-                        <button class="btn promt-btn" type="button">
-                            <i class="fi fi-sr-select"></i> ჯონ ფიცჯერალდ კენედი
-                        </button>
-                        <button class="btn promt-btn" type="button">
-                            <i class="fi fi-sr-world"></i> ეფემეროიდები
-                        </button>
+                        <div class="list-group scrollarea">
+                            <a href="#" class="list-group-item" aria-current="true">
+                                <div class="icon">
+                                    <i class="fi fi-rr-comments-question-check"></i>
+                                </div>
+                                <p>
+                                    ვინ იყო გარსევან ჭავჭავაძე?
+                                </p>
+                            </a>
+                            <a href="#" class="list-group-item" aria-current="true">
+                                <div class="icon">
+                                    <i class="fi fi-rr-comments-question-check"></i>
+                                </div>
+                                <p>
+                                    როდის დაიდო გიორგიევსკის ტრაქტატი?
+                                </p>
+                            </a>
+                            <a href="#" class="list-group-item" aria-current="true">
+                                <div class="icon">
+                                    <i class="fi fi-rr-comments-question-check"></i>
+                                </div>
+                                <p>
+                                    ვინ იყო დიმიტრი ერისთავი?
+                                </p>
+                            </a>
+                            <a href="#" class="list-group-item" aria-current="true">
+                                <div class="icon">
+                                    <i class="fi fi-rr-comments-question-check"></i>
+                                </div>
+                                <p>
+                                    მომიყევი ვრცლად დნმ-ის შესახებ.
+                                </p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="container p-0">
-                    <div class="chat-querysend">
-                        <input type="text" class="chat-input" id="niko-input" autocomplete="off"
-                            placeholder="მაგ: პარიზი, დენი, კალციუმი..." />
-                        <button onclick="fetchWikipediaContentWithTypingEffect()" type="button" class="chat-submit"
-                            id="querysendBtn">
-                            <i class="fi fi-sr-paper-plane"></i>
-                        </button>
-                    </div>
-                    <button class="chat-category-btn">
-                        <i class="fi fi-rr-plus"></i>
-                    </button>
-                </div>
-                <div>
-                    <h6>Niko შეიძლება ვერ დააკმაყოფილოს თქვენი მოთხოვნები. <a href="#">მიმდინარეობს განახლება</a></h6>
-                </div>
-            </form>
-        </section>
-    </main>
+                </aside>
+            </div>
 
-    <!-- Bootstrap -->
+            <div class="padding-content col h-full border-heavy">
+                <main>
+                    <section class="chat-section">
+                        <div class="header">
+                            <h5>
+                                ნიკო
+                            </h5>
+                            <button class="btn toggle-btn">
+                                <i class="fi fi-rr-menu-dots"></i>
+                            </button>
+                        </div>
+                        <div class="content">
+
+                            <div class="message">
+                                <div class="user-message">
+                                    <img src="assets/image/profile/tato.jpg" alt="">
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi aliquam,
+                                        modi ducimus minus voluptas velit rem, accusamus libero est, odio maxime saepe
+                                        aliquid vitae nam delectus hic mollitia obcaecati.
+                                    </p>
+                                </div>
+    
+                                <div class="bot-message">
+                                    <img src="assets/image/icons/logo.svg" alt="">
+                                    <div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi aliquam,
+                                            modi ducimus minus voluptas velit rem, accusamus libero est, odio maxime saepe
+                                            aliquid vitae nam delectus hic mollitia obcaecati.Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit. Iure excepturi aliquam, modi ducimus minus
+                                            voluptas velit rem, accusamus libero est, odio maxime saepe aliquid vitae nam
+                                            delectus hic mollitia obcaecati.Lorem, ipsum dolor sit amet consectetur
+                                            adipisicing elit. Iure excepturi aliquam, modi ducimus minus voluptas velit rem,
+                                            accusamus libero est, odio maxime saepe aliquid vitae nam delectus hic mollitia
+                                            obcaecati.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                                            excepturi aliquam, modi ducimus minus voluptas velit rem, accusamus libero est,
+                                            odio maxime saepe aliquid vitae nam delectus hic mollitia obcaecati.</p>
+                                        <div class="footer">
+                                            <div class="feedback">
+                                                <button class="btn" type="button">
+                                                    <i class="fi fi-rr-heart-rate"></i>
+                                                </button>
+                                                <button class="btn" type="button">
+                                                    <i class="fi fi-rr-horizontal-rule"></i>
+                                                </button>
+                                            </div>
+    
+                                            <div class="text-edit">
+                                                <button class="btn" type="button">
+                                                    <i class="fi fi-rr-copy-alt"></i> <span>კოპირება</span>
+                                                </button>
+                                                <button class="btn" type="button">
+                                                    <i class="fi fi-rr-edit"></i> <span>რედაქტირება</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-message">
+                                    <img src="assets/image/profile/tato.jpg" alt="">
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi aliquam,
+                                        modi ducimus minus voluptas velit rem, accusamus libero est, odio maxime saepe
+                                        aliquid vitae nam delectus hic mollitia obcaecati.
+                                    </p>
+                                </div>
+    
+                                <div class="bot-message">
+                                    <img src="assets/image/icons/logo.svg" alt="">
+                                    <div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi aliquam,
+                                            modi ducimus minus voluptas velit rem, accusamus libero est, odio maxime saepe
+                                            aliquid vitae nam delectus hic mollitia obcaecati.Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit. Iure excepturi aliquam, modi ducimus minus
+                                            voluptas velit rem, accusamus libero est, odio maxime saepe aliquid vitae nam
+                                            delectus hic mollitia obcaecati.Lorem, ipsum dolor sit amet consectetur
+                                            adipisicing elit. Iure excepturi aliquam, modi ducimus minus voluptas velit rem,
+                                            accusamus libero est, odio maxime saepe aliquid vitae nam delectus hic mollitia
+                                            obcaecati.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                                            excepturi aliquam, modi ducimus minus voluptas velit rem, accusamus libero est,
+                                            odio maxime saepe aliquid vitae nam delectus hic mollitia obcaecati.</p>
+                                        <div class="footer">
+                                            <div class="feedback">
+                                                <button class="btn" type="button">
+                                                    <i class="fi fi-rr-heart-rate"></i>
+                                                </button>
+                                                <button class="btn" type="button">
+                                                    <i class="fi fi-rr-horizontal-rule"></i>
+                                                </button>
+                                            </div>
+    
+                                            <div class="text-edit">
+                                                <button class="btn" type="button">
+                                                    <i class="fi fi-rr-copy-alt"></i> <span>კოპირება</span>
+                                                </button>
+                                                <button class="btn" type="button">
+                                                    <i class="fi fi-rr-edit"></i> <span>რედაქტირება</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-message">
+                                    <img src="assets/image/profile/tato.jpg" alt="">
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi aliquam,
+                                        modi ducimus minus voluptas velit rem, accusamus libero est, odio maxime saepe
+                                        aliquid vitae nam delectus hic mollitia obcaecati.
+                                    </p>
+                                </div>
+    
+                                <div class="bot-message">
+                                    <img src="assets/image/icons/logo.svg" alt="">
+                                    <div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi aliquam,
+                                            modi ducimus minus voluptas velit rem, accusamus libero est, odio maxime saepe
+                                            aliquid vitae nam delectus hic mollitia obcaecati.Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit. Iure excepturi aliquam, modi ducimus minus
+                                            voluptas velit rem, accusamus libero est, odio maxime saepe aliquid vitae nam
+                                            delectus hic mollitia obcaecati.Lorem, ipsum dolor sit amet consectetur
+                                            adipisicing elit. Iure excepturi aliquam, modi ducimus minus voluptas velit rem,
+                                            accusamus libero est, odio maxime saepe aliquid vitae nam delectus hic mollitia
+                                            obcaecati.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                                            excepturi aliquam, modi ducimus minus voluptas velit rem, accusamus libero est,
+                                            odio maxime saepe aliquid vitae nam delectus hic mollitia obcaecati.</p>
+                                        <div class="footer">
+                                            <div class="feedback">
+                                                <button class="btn" type="button">
+                                                    <i class="fi fi-rr-heart-rate"></i>
+                                                </button>
+                                                <button class="btn" type="button">
+                                                    <i class="fi fi-rr-horizontal-rule"></i>
+                                                </button>
+                                            </div>
+    
+                                            <div class="text-edit">
+                                                <button class="btn" type="button">
+                                                    <i class="fi fi-rr-copy-alt"></i> <span>კოპირება</span>
+                                                </button>
+                                                <button class="btn" type="button">
+                                                    <i class="fi fi-rr-edit"></i> <span>რედაქტირება</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-message">
+                                    <img src="assets/image/profile/tato.jpg" alt="">
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi aliquam,
+                                        modi ducimus minus voluptas velit rem, accusamus libero est, odio maxime saepe
+                                        aliquid vitae nam delectus hic mollitia obcaecati.
+                                    </p>
+                                </div>
+    
+                                <div class="bot-message">
+                                    <img src="assets/image/icons/logo.svg" alt="">
+                                    <div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi aliquam,
+                                            modi ducimus minus voluptas velit rem, accusamus libero est, odio maxime saepe
+                                            aliquid vitae nam delectus hic mollitia obcaecati.Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit. Iure excepturi aliquam, modi ducimus minus
+                                            voluptas velit rem, accusamus libero est, odio maxime saepe aliquid vitae nam
+                                            delectus hic mollitia obcaecati.Lorem, ipsum dolor sit amet consectetur
+                                            adipisicing elit. Iure excepturi aliquam, modi ducimus minus voluptas velit rem,
+                                            accusamus libero est, odio maxime saepe aliquid vitae nam delectus hic mollitia
+                                            obcaecati.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                                            excepturi aliquam, modi ducimus minus voluptas velit rem, accusamus libero est,
+                                            odio maxime saepe aliquid vitae nam delectus hic mollitia obcaecati.</p>
+                                        <div class="footer">
+                                            <div class="feedback">
+                                                <button class="btn" type="button">
+                                                    <i class="fi fi-rr-heart-rate"></i>
+                                                </button>
+                                                <button class="btn" type="button">
+                                                    <i class="fi fi-rr-horizontal-rule"></i>
+                                                </button>
+                                            </div>
+    
+                                            <div class="text-edit">
+                                                <button class="btn" type="button">
+                                                    <i class="fi fi-rr-copy-alt"></i> <span>კოპირება</span>
+                                                </button>
+                                                <button class="btn" type="button">
+                                                    <i class="fi fi-rr-edit"></i> <span>რედაქტირება</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                        <div class="chat-form">
+                            <div class="content">
+                                <input type="text" name="chatQueryInput" id="chatQueryInput" placeholder="მაგალითი: პლატინიუმი, რალფ ნორმან ენჯელი, თერმოდინამიკა...">
+                                <button type="button">
+                                    <i class="fi fi-rr-paper-plane-top"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
-    <!-- Swiper js -->
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>

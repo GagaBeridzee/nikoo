@@ -1,28 +1,65 @@
-.chat-header{
-    @include flex-center;
-    gap: 20px;
-    flex-direction: column;
-    
-    div{
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: $summary-secondary-light;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+
+    .navbar {
+        padding: 1rem;
+
+        .navbar-nav {
+            background-color: $summary-primary-light;
+            border-radius: $br-infinity;
+            @include shadow;
+
+            .nav-item {
+
+                .nav-link {
+                    border-radius: $br-infinity;
+                    padding: 11px 26px;
+                    color: $text-secondary-light;
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+
+                .nav-link.active {
+                    background-color: $text-primary-light;
+                    color: $summary-primary-light;
+                }
+            }
+        }
+    }
+
+    .button-list {
         @include flex-center;
-        width: 100%;
-        gap: 20px;
-    }
+        padding: 4px;
+        gap: 10px;
 
-    p{
-        font-weight: normal;
-        font-size: 1rem;
-        color: $text-secondary;
-    }
+        .btn {
+            @include flex-center;
+            width: 35px;
+            height: 35px;
+            border-radius: $br-infinity;
+            background-color: $summary-secondary-light;
 
-    h1{
-        font-size: 2.75rem;
-        color: $text-primary;
-        font-weight: 900;
+            img {
+                width: 35px;
+                height: 35px;
+                border-radius: $br-infinity;
+                object-fit: cover;
+            }
+        }
     }
+}
 
-    img{
-        width: 72px;
-        height: 72px;
-    }
+.r{
+    padding-top: 87px;
 }

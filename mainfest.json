@@ -4,8 +4,8 @@
     "description": "ქართული ჩათბოტი, რომელიც პირდაპირ კავშირშია ქართულ ვიკიპედიასთან.",
     "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "#060606",
-    "theme_color": "#060606",
+    "background_color": "#f2f2f2",
+    "theme_color": "#f2f2f2",
     "icons": [
         {
             "src": "assets/image/icons/niko-192.png",
@@ -42,7 +42,7 @@
             ]
         },
         {
-            "name": "Niko",
+            "name": "ტ",
             "description": "ქართული ვიკი ჩათბოტი.",
             "url": "/",
             "icons": [
@@ -54,19 +54,7 @@
             ]
         },
         {
-            "name": "Niko",
-            "description": "ქართული ვიკი ჩათბოტი.",
-            "url": "/",
-            "icons": [
-                {
-                    "src": "assets/image/icons/niko-72.png",
-                    "type": "image/png",
-                    "sizes": "72x72"
-                }
-            ]
-        },
-        {
-            "name": "Niko",
+            "name": "რ",
             "description": "ქართული ვიკი ჩათბოტი.",
             "url": "/",
             "icons": [

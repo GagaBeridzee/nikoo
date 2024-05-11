@@ -1,0 +1,86 @@
+aside{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5rem;
+    display: block !important;
+    padding-left: .25rem;
+    margin-left: -.25rem;
+    height: 100%;
+    overflow-y: auto;
+    width: 350px;
+    border-radius: $br-x-heavy;
+
+    .content{
+        overflow-y: auto;
+        overflow-x: hidden;
+        border-radius: $br-x-heavy;
+        background-color: $summary-primary-light;
+
+        .list-group{
+            padding: 1rem;
+            gap: 10px;
+
+            .list-group-item{
+                border-radius: $br-heavy;
+                border: none;
+                background-color: $summary-third-light;
+                @include flex-start;
+                gap: 10px;
+                padding: .5rem;
+
+                .icon{
+                    min-width: 45px;
+                    height: 45px;
+                    background-color: $summary-primary-light;
+                    @include flex-center;
+                    border-radius: $br-infinity;
+                    color: $text-primary-light;
+                }
+
+                p{
+                    margin: 0;
+                    padding: 0;
+                    font-size: small;
+                    text-align: start;
+                    color: $text-primary-light;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        &::-webkit-scrollbar-track{
+            margin: 2.5rem 0;
+        }
+    }
+
+    .sidebar-header{
+        @include flex-sb;
+        padding: 1rem;
+
+        h5{
+            font-weight: 700;
+        }
+
+        .toggle-btn{
+            width: 40px;
+            height: 40px;
+            @include flex-center;
+            background-color: $summary-secondary-light;
+            border-radius: $br-infinity;
+        }
+    }
+}
+
+*::-webkit-scrollbar{
+    width: .3rem;
+    margin: 2.5rem 0;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: $text-primary-light;
+    border-radius: $br-infinity;
+}
