@@ -21,7 +21,7 @@ aside{
             gap: 10px;
 
             .list-group-item{
-                border-radius: $br-heavy;
+                border-radius: $br-x-heavy;
                 border: none;
                 background-color: $summary-third-light;
                 @include flex-start;
@@ -44,6 +44,10 @@ aside{
                     text-align: start;
                     color: $text-primary-light;
                     font-weight: 500;
+                }
+
+                &:hover{
+                    background-color: $text-primary-light;
                 }
             }
         }
@@ -69,18 +73,4 @@ aside{
             border-radius: $br-infinity;
         }
     }
-}
-
-*::-webkit-scrollbar{
-    width: .3rem;
-    margin: 2.5rem 0;
-}
-
-*::-webkit-scrollbar-track{
-    background-color: transparent;
-}
-
-*::-webkit-scrollbar-thumb{
-    background-color: $text-primary-light;
-    border-radius: $br-infinity;
 }

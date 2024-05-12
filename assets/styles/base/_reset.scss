@@ -35,6 +35,21 @@ body {
     overflow: hidden;
 }
 
+
+*::-webkit-scrollbar{
+    width: .3rem;
+    margin: 2.5rem 0;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: $text-primary-light;
+    border-radius: $br-infinity;
+}
+
 /* ------ flaticon problem fix -------*/
 .fi {
     position: relative;
